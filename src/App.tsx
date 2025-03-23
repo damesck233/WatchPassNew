@@ -2,11 +2,13 @@
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
 
-import { Button, MantineProvider } from '@mantine/core';
+import { MantineProvider } from '@mantine/core';
+import { Header } from './components/Header';
 
 export default function App() {
-  return <MantineProvider>
-    {/* Your app here */}
-    <Button variant="light" size="xl">Button</Button>
-  </MantineProvider>;
+  return (
+    <MantineProvider>
+      <Header />
+    </MantineProvider>
+  );
 }
