@@ -11,17 +11,9 @@ export default function App() {
   return (
     <MantineProvider>
       <Header />
-      <Alert color="blue">
-        <Group>
-          <Button
-            component="a"
-            href="skm.html"
-            leftSection={<IconBrandWechat size={16} />}
-          >
-            收款码
-          </Button>
-        </Group>
-      </Alert>
+      <Button component="a" href="skm.html" leftSection={<IconBrandWechat size={16} />}>课程表</Button><br /><br />
+      <Button component="a" href="skm.html" leftSection={<IconBrandWechat size={16} />}>倒计时</Button><br /><br />
+      <Button component="a" href="skm.html" leftSection={<IconBrandWechat size={16} />}>收款码</Button>
     </MantineProvider>
   );
 }
